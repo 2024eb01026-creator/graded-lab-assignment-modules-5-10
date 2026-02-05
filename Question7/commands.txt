@@ -1,0 +1,2 @@
+chmod +x patterns.sh
+./patterns.sh input.txt
