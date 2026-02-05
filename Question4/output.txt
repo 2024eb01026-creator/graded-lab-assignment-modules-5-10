@@ -8,7 +8,6 @@ Contents of valid.txt:
  user99@yahoo.com
 
 Contents of invalid.txt:
- cat > emails.txt << EOF
  john_doe@gmail.com
  test@company.org
  hello@123.com
