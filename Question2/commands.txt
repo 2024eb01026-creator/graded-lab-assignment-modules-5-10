@@ -1,0 +1,3 @@
+chmod +x log_analyze.sh
+./log_analyze.sh sample.log
+./log_analyze.sh wrong.log
