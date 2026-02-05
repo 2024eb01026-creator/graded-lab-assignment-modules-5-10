@@ -1,9 +1,8 @@
-Parent PID: 4123
-Child 1 created with PID 4124
-Child 2 created with PID 4125
-Child 3 created with PID 4126
-Parent cleaned up child with PID 4124
-Parent cleaned up child with PID 4125
-Parent cleaned up child with PID 4126
+Parent PID: 1874
+Child 1 created with PID 1875
+Child 2 created with PID 1876
+Child 3 created with PID 1877
+Parent cleaned up child with PID 1877
+Parent cleaned up child with PID 1876
+Parent cleaned up child with PID 1875
 All child processes cleaned. No zombies.
-
