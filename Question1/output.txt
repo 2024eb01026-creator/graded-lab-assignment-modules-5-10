@@ -1,1 +1,1 @@
-
+./analyze.sh sample.txt
