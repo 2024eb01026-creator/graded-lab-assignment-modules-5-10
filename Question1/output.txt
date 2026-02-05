@@ -1,1 +1,15 @@
-./analyze.sh sample.txt
+Case 1: File input (sample.txt)
+------------------------------
+Argument is a file.
+ 1  2  12 sample.txt
+
+Case 2: Directory input (testdir)
+---------------------------------
+Argument is a directory.
+Total number of files: 1
+Number of .txt files: 1
+
+Case 3: Invalid path
+--------------------
+Error: Invalid path or argument does not exist.
+
