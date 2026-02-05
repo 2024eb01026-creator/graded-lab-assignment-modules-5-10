@@ -1,0 +1,11 @@
+./log_analyze.sh sample.log
+Total log entries: 4
+INFO messages: 1
+WARNING messages: 1
+ERROR messages: 2
+Most recent ERROR message:
+2025-01-12 10:17:10 ERROR Network timeout
+Report generated: logsummary_2025-01-12.txt
+
+./log_analyze.sh wrong.log
+Error: File does not exist or is not readable.
