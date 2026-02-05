@@ -1,0 +1,7 @@
+Parent PID: 1919
+Child 1 sending SIGTERM
+
+Parent received SIGTERM (15). Handling but continuing...
+Child 2 sending SIGINT
+
+Parent received SIGINT (2). Exiting gracefully.
