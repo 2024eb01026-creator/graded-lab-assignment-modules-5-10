@@ -1,1 +1,5 @@
-
+Parent script PID: 522
+Moved a.txt in background, PID: 524
+Moved b.txt in background, PID: 526
+Moved c.txt in background, PID: 528
+All background move operations completed.
