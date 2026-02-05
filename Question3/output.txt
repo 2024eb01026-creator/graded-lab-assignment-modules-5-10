@@ -1,1 +1,16 @@
+./validate_results.sh
+Students who failed in exactly ONE subject:
+-----------------------------------------
+101, Vikas
+103, Rahul
+105, Dipesh
 
+Students who passed in ALL subjects:
+----------------------------------
+102, Salini
+104, Priya
+
+Summary:
+--------
+Students failed in exactly one subject: 3
+Students passed in all subjects: 2
