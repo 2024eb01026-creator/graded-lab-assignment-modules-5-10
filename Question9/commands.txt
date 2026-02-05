@@ -1,0 +1,2 @@
+gcc zombie_prevention.c -o zombie_prevention
+./zombie_prevention
