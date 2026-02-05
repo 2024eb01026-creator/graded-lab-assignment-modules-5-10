@@ -1,1 +1,5 @@
+cat > input.txt << EOF
+Linux shell scripting is powerful and efficient
+Shell scripts automate repetitive tasks easily
+EOF
 
