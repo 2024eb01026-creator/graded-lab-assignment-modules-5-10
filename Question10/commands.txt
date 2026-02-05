@@ -1,0 +1,2 @@
+gcc signal_handling.c -o signal_handling
+./signal_handling
