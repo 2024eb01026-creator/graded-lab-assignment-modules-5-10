@@ -1,1 +1,2 @@
+The script reads input.txt and converts the text into individual words by removing punctuation and converting all words to lowercase. It then finds the longest and shortest words, calculates the average word length, and counts the total number of unique words using standard Unix commands and pipes.
 
