@@ -1,1 +1,3 @@
+chmod +x bg_move.sh
+./bg_move.sh testdir
 
