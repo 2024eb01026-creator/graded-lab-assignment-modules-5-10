@@ -1,1 +1,16 @@
+./emailcleaner.sh
+ Valid emails stored in valid.txt
+ Invalid emails stored in invalid.txt
 
+Contents of valid.txt:
+ abc123@gmail.com
+ goodemail@domain.com
+ user99@yahoo.com
+
+Contents of invalid.txt:
+ cat > emails.txt << EOF
+ john_doe@gmail.com
+ test@company.org
+ hello@123.com
+ vikasritvik@email
+ 
