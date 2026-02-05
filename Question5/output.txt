@@ -1,1 +1,13 @@
 
+Files present only in dirA:
+---------------------------
+file2.txt
+
+Files present only in dirB:
+---------------------------
+file3.txt
+
+Files present in BOTH directories with content comparison:
+----------------------------------------------------------
+file1.txt : SAME content
+file4.txt : SAME content
