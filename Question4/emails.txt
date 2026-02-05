@@ -1,4 +1,4 @@
-cat > emails.txt << EOF
+
 abc123@gmail.com
 john_doe@gmail.com
 user99@yahoo.com
@@ -7,4 +7,4 @@ abc123@gmail.com
 hello@123.com
 goodemail@domain.com
 vikasritvik@email
-EOF
+
