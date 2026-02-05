@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Check if marks file exists
 if [ ! -f "marks.txt" ]; then
     echo "Error: marks.txt file not found."
     exit 1
@@ -14,27 +13,30 @@ echo "-----------------------------------------"
 
 while IFS=',' read -r roll name m1 m2 m3
 do
+    # Clean inputs (remove spaces and CR characters)
+    m1=$(echo "$m1" | tr -d ' \r')
+    m2=$(echo "$m2" | tr -d ' \r')
+    m3=$(echo "$m3" | tr -d ' \r')
+
     fail_count=0
 
-    if [ "$m1" -lt 33 ]; then
-        fail_count=$((fail_count + 1))
+    if (( m1 < 33 )); then
+        ((fail_count++))
+    fi
+    if (( m2 < 33 )); then
+        ((fail_count++))
+    fi
+    if (( m3 < 33 )); then
+        ((fail_count++))
     fi
 
-    if [ "$m2" -lt 33 ]; then
-        fail_count=$((fail_count + 1))
-    fi
-
-    if [ "$m3" -lt 33 ]; then
-        fail_count=$((fail_count + 1))
-    fi
-
-    if [ "$fail_count" -eq 1 ]; then
+    if (( fail_count == 1 )); then
         echo "$roll, $name"
-        one_fail_count=$((one_fail_count + 1))
+        ((one_fail_count++))
     fi
 
-    if [ "$fail_count" -eq 0 ]; then
-        all_pass_count=$((all_pass_count + 1))
+    if (( fail_count == 0 )); then
+        ((all_pass_count++))
     fi
 
 done < marks.txt
@@ -45,7 +47,11 @@ echo "----------------------------------"
 
 while IFS=',' read -r roll name m1 m2 m3
 do
-    if [ "$m1" -ge 33 ] && [ "$m2" -ge 33 ] && [ "$m3" -ge 33 ]; then
+    m1=$(echo "$m1" | tr -d ' \r')
+    m2=$(echo "$m2" | tr -d ' \r')
+    m3=$(echo "$m3" | tr -d ' \r')
+
+    if (( m1 >= 33 && m2 >= 33 && m3 >= 33 )); then
         echo "$roll, $name"
     fi
 done < marks.txt
