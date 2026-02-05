@@ -1,25 +1,27 @@
-
 #!/bin/bash
 
-FILE="input.txt"
+# Check if input file exists
+if [ ! -f "input.txt" ]; then
+    echo "Error: input.txt not found"
+    exit 1
+fi
 
-# Convert text to lowercase and split into one word per line
-WORDS=$(tr -c 'A-Za-z' '\n' < "$FILE" | tr 'A-Z' 'a-z')
+# Convert text to one word per line (lowercase, remove punctuation)
+words=$(tr -c 'a-zA-Z' '\n' < input.txt | tr 'A-Z' 'a-z' | grep -v '^$')
 
 # Longest word
-LONGEST=$(echo "$WORDS" | awk '{print length, $0}' | sort -n | tail -1 | awk '{print $2}')
+longest=$(echo "$words" | awk '{ if (length($0) > max) { max = length($0); word = $0 } } END { print word }')
 
 # Shortest word
-SHORTEST=$(echo "$WORDS" | awk '{print length, $0}' | sort -n | head -1 | awk '{print $2}')
+shortest=$(echo "$words" | awk 'NR==1 { min = length($0); word = $0 } { if (length($0) < min) { min = length($0); word = $0 } } END { print word }')
 
 # Average word length
-AVG=$(echo "$WORDS" | awk '{sum+=length; count++} END {print sum/count}')
+avg=$(echo "$words" | awk '{ total += length($0); count++ } END { printf "%.2f\n", total/count }')
 
-# Total number of unique words
-UNIQUE=$(echo "$WORDS" | sort | uniq | wc -l)
+# Unique word count
+unique=$(echo "$words" | sort | uniq | wc -l)
 
-# Display results
-echo "Longest word: $LONGEST"
-echo "Shortest word: $SHORTEST"
-echo "Average word length: $AVG"
-echo "Total unique words: $UNIQUE"
+echo "Longest word: $longest"
+echo "Shortest word: $shortest"
+echo "Average word length: $avg"
+echo "Total unique words: $unique"
