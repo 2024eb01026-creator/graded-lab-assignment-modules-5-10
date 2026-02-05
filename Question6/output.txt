@@ -1,1 +1,4 @@
-
+Longest word: repetitive
+Shortest word: is
+Average word length: 5.50
+Total unique words: 16
