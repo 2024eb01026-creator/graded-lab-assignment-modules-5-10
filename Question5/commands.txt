@@ -1,3 +1,14 @@
+Command:
 chmod +x sync.sh
+
+Explanation:
+This command grants execute permission to the sync.sh script. I observed that after running this command, the script became executable.
+
+
+Command:
 ./sync.sh
+
+Explanation:
+This command runs the script to compare the directories dirA and dirB. I observed that it listed files present only in dirA, files present only in dirB, and compared common files to check whether their contents matched without modifying any files.
+
 
