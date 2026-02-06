@@ -1,0 +1,12 @@
+Command:
+chmod +x metrics.sh
+
+Explanation:
+This command provides execute permission to the metrics.sh script. I observed that the script became executable after running this command.
+
+
+Command:
+./metrics.sh
+
+Explanation:
+This command runs the script, which analyzes input.txt. I observed that it displayed the longest word, shortest word, average word length, and total number of unique words using text-processing commands like tr, sort, uniq, wc, and awk.
