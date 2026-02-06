@@ -1,3 +1,19 @@
+Command:
 chmod +x log_analyze.sh
+
+Explanation:
+This command grants execute permission to the log_analyze.sh script. I observed that after running this command, the script became executable and ready to run.
+
+
+Command:
 ./log_analyze.sh sample.log
+
+Explanation:
+This command executes the script with sample.log as input. I observed that the script validated the file, counted total log entries, displayed the number of INFO, WARNING, and ERROR messages, showed the most recent ERROR entry, and generated the summary report file.
+
+
+Command:
 ./log_analyze.sh wrong.log
+
+Explanation:
+This command runs the script with a non-existent log file. I observed that the script handled the error gracefully and displayed a meaningful message indicating that the file does not exist or is not readable.
