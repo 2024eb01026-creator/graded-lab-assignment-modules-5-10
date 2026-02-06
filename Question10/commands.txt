@@ -1,2 +1,12 @@
+Command:
 gcc signal_handling.c -o signal_handling
+
+Explanation:
+This command compiles the C program using the GCC compiler and creates an executable file named signal_handling. I observed that no error messages were displayed, which indicates successful compilation.
+
+
+Command:
 ./signal_handling
+
+Explanation:
+This command executes the compiled program. I observed that the parent process kept running, received SIGTERM after 5 seconds, then received SIGINT after 10 seconds and exited gracefully.
