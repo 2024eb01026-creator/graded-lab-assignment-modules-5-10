@@ -1,2 +1,12 @@
+Command:
 gcc zombie_prevention.c -o zombie_prevention
+
+Explanation:
+This command compiles the C program using the GCC compiler and creates an executable file named zombie_prevention. I observed that no errors were displayed, indicating successful compilation.
+
+
+Command:
 ./zombie_prevention
+
+Explanation:
+This command executes the program, which creates multiple child processes. I observed that the parent process used wait() or waitpid() to clean up each terminated child and printed their PIDs, ensuring that no zombie processes remained.
