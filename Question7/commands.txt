@@ -1,2 +1,12 @@
+Command:
 chmod +x patterns.sh
+
+Explanation:
+This command grants execute permission to the patterns.sh script. I observed that after running this command, the script became executable from the terminal.
+
+
+Command:
 ./patterns.sh input.txt
+
+Explanation:
+This command runs the script using input.txt as input. I observed that the script processed the file and separated words into vowels.txt (only vowels), consonants.txt (only consonants), and mixed.txt (words containing both vowels and consonants starting with a consonant), ignoring case while checking patterns.
