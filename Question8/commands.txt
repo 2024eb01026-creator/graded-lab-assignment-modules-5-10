@@ -1,3 +1,13 @@
+Command:
 chmod +x bg_move.sh
+
+Explanation:
+This command provides execute permission to the bg_move.sh script. I observed that after running this command, the script became executable.
+
+
+Command:
 ./bg_move.sh testdir
+
+Explanation:
+This command executes the script by passing testdir as an argument. I observed that each file inside testdir was moved into the backup/ subdirectory in the background, the PID of each move operation was displayed, and the script waited for all background processes to complete before finishing.
 
