@@ -1,3 +1,13 @@
+Command:
 chmod +x validate_results.sh
+
+Explanation:
+This command provides execute permission to the validate_results.sh script. I observed that after executing this command, the script became runnable from the terminal.
+
+
+Command:
 ./validate_results.sh
+
+Explanation:
+This command runs the script, which reads student data from marks.txt. I observed that it correctly identified students who failed in exactly one subject, students who passed all subjects, and displayed the count for each category based on the passing mark criteria.
 
