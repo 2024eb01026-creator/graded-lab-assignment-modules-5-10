@@ -1,5 +1,28 @@
+Command:
 chmod +x analyze.sh
+
+Explanation:
+This command gives execute permission to the analyze.sh script file. I observed that after running this command, the script became executable.
+
+
+Command:
 ./analyze.sh sample.txt
+
+Explanation:
+This command runs the script with sample.txt as input. I observed that the script successfully analyzed the file and displayed the expected output.
+
+
+Command:
 ./analyze.sh testdir
+
+Explanation:
+This command runs the script using a directory name instead of a file. I observed that the script handled this case and displayed an appropriate message indicating invalid input.
+
+
+Command:
 ./analyze.sh wrongpath
+
+Explanation:
+This command runs the script with a non-existent file path. I observed that the script displayed an error message indicating that the file does not exist.
+
 
